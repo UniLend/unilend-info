@@ -356,7 +356,7 @@ function TokenPage({ address, history }) {
               </PanelWrapper>
             </>
 
-            <RowBetween style={{ marginTop: '3rem' }}>
+            {/* <RowBetween style={{ marginTop: '3rem' }}>
               <TYPE.main fontSize={'1.125rem'}>Top Pairs</TYPE.main>
               <AutoRow gap="4px" style={{ width: 'fit-content' }}>
                 <Checkbox
@@ -385,7 +385,7 @@ function TokenPage({ address, history }) {
             </RowBetween>
             <Panel rounded>
               {transactions ? <TxnList color={backgroundColor} transactions={transactions} /> : <Loader />}
-            </Panel>
+            </Panel> */}
             <>
               <RowBetween style={{ marginTop: '3rem' }}>
                 <TYPE.main fontSize={'1.125rem'}>Token Information</TYPE.main>{' '}

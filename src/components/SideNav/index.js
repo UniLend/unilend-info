@@ -116,12 +116,12 @@ function SideNav({ history }) {
             <Title />
             {!below1080 && (
               <AutoColumn gap="1.25rem" style={{ marginTop: '1rem' }}>
-                <BasicLink to="/home">
+                {/* <BasicLink to="/home">
                   <Option activeText={history.location.pathname === '/home' ?? undefined}>
                     <TrendingUp size={20} style={{ marginRight: '.75rem' }} />
                     Overview
                   </Option>
-                </BasicLink>
+                </BasicLink> */}
                 <BasicLink to="/tokens">
                   <Option
                     activeText={
@@ -134,7 +134,7 @@ function SideNav({ history }) {
                     Tokens
                   </Option>
                 </BasicLink>
-                <BasicLink to="/pairs">
+                {/* <BasicLink to="/pairs">
                   <Option
                     activeText={
                       (history.location.pathname.split('/')[1] === 'pairs' ||
@@ -145,9 +145,9 @@ function SideNav({ history }) {
                     <PieChart size={20} style={{ marginRight: '.75rem' }} />
                     Pairs
                   </Option>
-                </BasicLink>
+                </BasicLink> */}
 
-                <BasicLink to="/accounts">
+                {/* <BasicLink to="/accounts">
                   <Option
                     activeText={
                       (history.location.pathname.split('/')[1] === 'accounts' ||
@@ -158,12 +158,12 @@ function SideNav({ history }) {
                     <List size={20} style={{ marginRight: '.75rem' }} />
                     Accounts
                   </Option>
-                </BasicLink>
+                </BasicLink> */}
               </AutoColumn>
             )}
           </AutoColumn>
           <AutoColumn gap="0.5rem" style={{ marginLeft: '.75rem', marginBottom: '4rem' }}>
-            <HeaderText>
+            {/* <HeaderText>
               <Link href="https://uniswap.org" target="_blank">
                 Uniswap.org
               </Link>
@@ -187,7 +187,7 @@ function SideNav({ history }) {
               <Link href="https://twitter.com/UniswapProtocol" target="_blank">
                 Twitter
               </Link>
-            </HeaderText>
+            </HeaderText> */}
             <Toggle isActive={isDark} toggle={toggleDarkMode} />
           </AutoColumn>
           {!below1180 && (
